@@ -5,6 +5,8 @@ let colors = [
   "#FF8AE2",
 ];
 
+let foregroundColor = "#FFF"
+
 function getRandomInt() {
   max = colors.length;
   return Math.floor(Math.random() * (max - 0) + 0);
@@ -21,7 +23,15 @@ hacktoberfestElement.className =
 
 hacktoberfestElement.innerHTML = "Hacktoberfest!";
 
-hacktoberfestElement.style.color = colors[getRandomInt()];
+hacktoberfestElement.style.color = foregroundColor;
+
+hacktoberfestElement.addEventListener('mouseenter', function(){
+  hacktoberfestElement.style.color = colors[getRandomInt()]
+});
+
+hacktoberfestElement.addEventListener('mouseleave', function(){
+  hacktoberfestElement.style.color = foregroundColor 
+});
 
 hacktoberfestElement.href =
   "https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest";
