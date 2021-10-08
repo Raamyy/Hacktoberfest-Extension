@@ -21,13 +21,13 @@ hacktoberfestElement.addEventListener('mouseleave', function () { hacktoberfestE
 hacktoberfestElement.href =
   "https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest";
 
-let action = document.createElement("a");
-action.className = "js-selected-navigation-item Header-link mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15";
-action.innerHTML = "assigned?";
-action.style.color = foregroundColor;
-action.addEventListener('mouseenter', function () { action.style.color = rgba() });
-action.addEventListener('mouseleave', function () { action.style.color = foregroundColor });
-action.href = "https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest+no%3Aassignee";
+// let action = document.createElement("a");
+// action.className = "js-selected-navigation-item Header-link mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15";
+// action.innerHTML = "assigned?";
+// action.style.color = foregroundColor;
+// action.addEventListener('mouseenter', function () { action.style.color = rgba() });
+// action.addEventListener('mouseleave', function () { action.style.color = foregroundColor });
+// action.href = "https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest+no%3Aassignee";
 
 nav.appendChild(hacktoberfestElement);
 nav.appendChild(action);
